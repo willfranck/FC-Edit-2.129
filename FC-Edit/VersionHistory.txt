@@ -1,0 +1,210 @@
+FC-Edit Universal
+
+v2.129
+- Fix "File Format Error: Missing Data 99" ("IGN vs TPS" setting)
+- Recalc Base Honda (VT0 & VT1)
+- Recent file menus
+- Added 4G63 v1.65
+- Added 13B-REW v3.11
+- Added 1JZ-GTE v1.88
+- Added 4A-GE v1.00
+- Added 3S-GTE3 v3.12B
+- Added 3S-GE v4.08
+- Added SR20DET3 v4.00B
+- Added 1JZ-GTE2 v3.12
+- Added 13B-REW v5.06
+
+v2.128
+- Added RB25DET v4.34
+- Added 4E-FTE1 v1.10
+- Added SR206PRO v1.332
+- Added 1JZGT-D 6.03
+- Added 3s-GE v4.09
+- Added RB26DETT v8.03
+- Added 4A-GE2 v2.01
+- Added 3S-GE v3.63
+- Added 1JZ-GTE v1.87
+- Added 13BR2PRO v3.002
+- Added 1JZ-GTE v2.10
+- Added EJ20R v4.03A
+- Added 13B1 v3.01
+- Added 13BR1PRO v4.002
+- Added 1JGT1PRO v2.102
+- Fixed setting graph editors for TPS changes
+- Unlock IGN vs TPS setting (Settings 4) for L-Jetro Power-FC's *
+- Change display of IGN vs TPS from advance -> retard *
+
+* Note the new setting (tab 4): IGN vs TPS added for L-Jetro Power-FCs.
+  This used to displayed as advance, however some Power-FC owners reported this was actually retard on their Power-FC's, so it seems Apexi did not make this consistant accross the board. The setting is now just labeled displayed as 'Adjust' due to this inconsistancy.
+
+v2.127
+- Added SR20DET4 v3.00B
+- Added 1JZ-GTE v2.02
+- Fixed write Funciton Select for 1JZGT-At versions
+- Added SR20DE4 v3.13
+- Added RB26PRO2 v4.41
+- Added 2JGT1PRO v4.10C
+- Added 3S-GTE v1.51A
+- Added 1JZGT-AT v3.43
+
+v2.126
+- Added RB26 Pro v3.40
+- Added RB26DETT v6.45A
+- Added 13B-REW v7.06
+- Added 3S-GTE2 v2.12A
+- Added RB20DET v2.32A
+- Added EJ20GPRO v2.402
+- Added SR20DET4 v3.00C
+- Added 4G63-US v3.05B
+- Added log review ability to Monitor window
+- Fixed old version PFC MapRef not disabled
+- Allow enter key to work in dropdown combo edits
+- Fixed JZX100-AT writing of Function Select
+- Fixed JZX100-AT logging GearPos display as 1,2,3,4
+- Fixed JZX100-AT logging Basic Boost being same as speed
+- Fixed JZX100-AT logging ATF temp out by 80
+- Fixed JZX100-AT logging Sensor/Sw
+
+v2.125
+- Fix bug causing rare 'skewed' log file.
+- Added 1JZ-GTE v1.91A support
+- Added 3S-GE v4.10A support
+- Added EJ207 v6.30b support
+- Found first read with USB/serial via USB hub was failing. 
+  >> Fixed with reset Com port (close&open) on any retry - or INR error.
+- Added more debugging for INR errors.
+
+v2.124
+- Hopefully reduce number of INR errors
+- Add DebugLog.txt for further improving INR errors
+- Reset Com port settings when com port is changed
+- Fix error in frmMain_load on first time run
+- Added SR202PRO v3.122 support
+- Changed Setting6 (AT) label to "TPS vs ATF line pressure"
+
+v2.123
+- Added COM auto detect function
+- Hopefully reduced dropouts while logging and updating simultaneously.
+- Fixed FileOpen when txt file has LF instead of CR+LF
+- Added SR20DE1 v4.12 support
+
+v2.122
+- Added 1JZ-GTE3 v3.20A support
+- Added RB25DET v4.33A support
+- Add 13B-REW v4.11 support
+- Fix log open giving 'File Open Error' when log contains no advanced data
+
+v2.121
+- Added compare feature
+- Restore the monitor window open/closed on startup 
+- Added Interpolate feature to map (right click)
+- Fixed bug when pasting into IGT map when display = split
+
+v2.120
+- Fix run-time error when minimising 3d graph
+- Fix EditCurve buttons for all Power-FC versions
+- Make column widths in AF table not adjustable
+- Fix AF table (and tracer) for 4G63, row 1 is 'KPM frq' not 'Voltage'
+- Fix SetupAux form when displaying polynomials.
+- Add SR20DET4 v3.12A support
+- Add SR20DET4 v3.01A support
+- Add SR20DET5 v1.33 support
+
+v2.119
+- Add Show All option to Setup ComPort menu
+- Fix bug, WriteAll sometimes performing scan when version doesn't match.
+- Fixs bugs in setup Aux 5-8
+- Add RB25DET v2.33 support
+- Add 3S-GE v3.80a support
+- Add 2JZ-GTE1 v4.10B support
+- Add 4AGE1PRO v1.142 support
+
+v2.118
+- Add new Base Map display types (Duty etc)
+- Add "Save settings with log" option
+- Fix bug where MapWatch MaxVal could prevent MapTracer working.
+- Prevent slowdown in logging speed when Map tracer etc showing
+- Add 13B-REW v7.07 support
+- Add SR20DET4 v2.15D support
+- Add 4E-FTE1 v1.31 support
+- Add 1JGT3PRO v3.212 support
+- Adding 1JZGT-AT v3.54 support
+
+v2.117
+- Fix bug loading log file with 8 auxilaries - only was loading ANx raw 
+
+v2.116
+- Fix bug with Log item names not being setup correctly - introduced in 2.114
+
+v2.115
+- Added B16B v1.501
+
+v2.114
+- Fix problem with AF curve grid loosing focus.
+- Added B18C v2.02B
+
+v2.113b
+- Added B18C v1.523
+- Added SR20DET3 v4.01
+- Added SR20DET5 v1.35
+- Added 4A-GE1 v1.14A
+
+v2.113a
+- Added 13B-REW v1.93
+
+v2.113
+- Fixed bug where pressing F1, F2, F1, Yes to save - would save no data.
+- Fixed ReCalc base map bug when Inj Lamda or A/F displayed
+- Added 13B-REW2 v2.11 support
+
+v2.112
+- Fixed bug when saving log without stopping log first could result in only one line being saved.
+
+v2.111b
+- Added SR20DE2 v3.13 support
+
+v2.111a
+- Added 13B-REW v6.07 support
+
+V2.111
+- Fixed MapTracer not working on MapWatch during logging
+- Fixed startup error (occurs if selected Tab on exit isn't visible on next start up)
+- Fixed bug where FC-Box 1.0 would not read Power-FC version.
+- Fixed Edit curve AirFlow 2 - x corruption
+- Made Airflow selected cell bolder.
+- Added keyboard editing of curve editor
+- Added 'Advance' label to IGN vs TPS setting
+
+v2.110
+- Added Injector map Correction/Lambda/AF display types
+- Implement map colour scheme - red to green
+- Implement *n for multiply map selection
+- Implement Map Bruise function -> Press Spacebar from map or chart
+- Make map selection bolder
+- Fixed Lock Y values desn't move on Edit curve form when resized.
+- Fixed Map Watch MapRefLabels not being initialised.
+
+v2.101c
+- Airflow warning -> Volts
+- Ignition vs. TPS => degrees
+- Add 13B-REW v5.07 support 
+
+v2.101b
+- Fix compatability with FC-Box 1.0
+ 
+v2.101a
+- Added 13B1 v3.11 support (FC3S)
+- Fixed IGN dwell vs RPM label (IGL)
+
+v2.101
+- Hide/disable Setting 5>custom feature for oldest Power-FCs
+- Support non standard value check box Settings
+- Fixed CheckUnsavedData behaviour
+- Fixed Setup Aux can't change settings
+- Fixed chkSettings (function select) not working on some versions
+
+v2.100a
+- Add RB25DET v5.01@
+
+v2.100
+- Initial Release
